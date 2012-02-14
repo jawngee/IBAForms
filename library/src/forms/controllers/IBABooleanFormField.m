@@ -14,7 +14,6 @@
 
 #import "IBABooleanFormField.h"
 
-
 @interface IBABooleanFormField () 
 - (void)switchValueChanged:(id)sender;
 @end
@@ -25,6 +24,7 @@
 @synthesize switchCell = switchCell_;
 @synthesize checkCell = checkCell_;
 @synthesize booleanFormFieldType = booleanFormFieldType_;
+@synthesize checkCellTitle = checkCellTitle_;
 
 - (void)dealloc {
 	IBA_RELEASE_SAFELY(switchCell_);
@@ -46,6 +46,10 @@
 	return [self initWithKeyPath:keyPath title:title valueTransformer:nil type:booleanFormFieldType];
 }
 
+- (id)initWithKeyPath:(NSString *)keyPath title:(NSString *)title checkCellTitle:(NSString *) checkTitle type:(IBABooleanFormFieldType)booleanFormFieldType {
+    checkCellTitle_ = checkTitle;
+	return [self initWithKeyPath:keyPath title:title valueTransformer:nil type:booleanFormFieldType];
+}
 
 #pragma mark -
 #pragma mark Cell management
@@ -82,8 +86,9 @@
 
 - (IBAFormFieldCell *)checkCell {
 	if (checkCell_ == nil) {
-		checkCell_ = [[IBAFormFieldCell alloc] initWithFormFieldStyle:self.formFieldStyle 
-														   reuseIdentifier:@"IBABooleanCheckCell"];
+		//checkCell_ = [[IBAFormFieldCell alloc] initWithFormFieldStyle:self.formFieldStyle 
+														   //reuseIdentifier:@"IBABooleanCheckCell"];
+        checkCell_ = [[IBABooleanCheckCell alloc] initWithFormFieldStyle:self.formFieldStyle valueTitle:checkCellTitle_ reuseIdentifier:@"IBABooleanCheckCell"];
 	}
 	
 	return checkCell_;
