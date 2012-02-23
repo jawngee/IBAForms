@@ -47,5 +47,7 @@
 #import <IBAForms/IBATextInputProvider.h>
 #import <IBAForms/IBATitleFormField.h>
 #import <IBAForms/SynthesizeSingleton.h>
+#import <IBAForms/IBAMemoFormField.h>
+#import <IBAForms/IBAMemoFormFieldCell.h>
 
 
