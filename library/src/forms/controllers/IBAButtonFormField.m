@@ -63,9 +63,7 @@
 			imageView.userInteractionEnabled = YES;
 
 			CGRect cellViewBounds = cell_.cellView.bounds;
-			CGPoint imageCenter = CGPointMake(cell_.label.bounds.origin.x + CGRectGetMidX(imageView.bounds), CGRectGetMidY(cellViewBounds));
-
-			imageView.center = imageCenter;
+			imageView.frame=CGRectMake(cell_.cellView.bounds.size.width-8-cell_.cellView.bounds.size.height, (cell_.cellView.bounds.size.height/2)-(imageView.frame.size.height/2), imageView.frame.size.width, imageView.frame.size.height);
 
 			[cell_.cellView addSubview:imageView];
 			[imageView release];
