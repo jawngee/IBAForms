@@ -73,6 +73,10 @@
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		FECF214C14C1C24E001E3890 /* IBABooleanCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FECF214A14C1C24E001E3890 /* IBABooleanCheckCell.m */; };
 		FECF215D14C1E452001E3890 /* IBABooleanCheckCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF215C14C1E452001E3890 /* IBABooleanCheckCell.h */; };
+		FF54A12C14F6AE7B001A88E0 /* IBAMemoFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54A12B14F6AE7B001A88E0 /* IBAMemoFormField.m */; };
+		FF54A12F14F6AE8B001A88E0 /* IBAMemoFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54A12E14F6AE8B001A88E0 /* IBAMemoFormFieldCell.m */; };
+		FF54A13214F6AE9F001A88E0 /* IBAMemoFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = FF54A13014F6AE9E001A88E0 /* IBAMemoFormField.h */; };
+		FF54A13314F6AE9F001A88E0 /* IBAMemoFormFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FF54A13114F6AE9F001A88E0 /* IBAMemoFormFieldCell.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +147,10 @@
 		D2AAC07E0554694100DB518D /* libIBAForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIBAForms.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECF214A14C1C24E001E3890 /* IBABooleanCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBABooleanCheckCell.m; sourceTree = "<group>"; };
 		FECF215C14C1E452001E3890 /* IBABooleanCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBABooleanCheckCell.h; sourceTree = "<group>"; };
+		FF54A12B14F6AE7B001A88E0 /* IBAMemoFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBAMemoFormField.m; sourceTree = "<group>"; };
+		FF54A12E14F6AE8B001A88E0 /* IBAMemoFormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBAMemoFormFieldCell.m; sourceTree = "<group>"; };
+		FF54A13014F6AE9E001A88E0 /* IBAMemoFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBAMemoFormField.h; sourceTree = "<group>"; };
+		FF54A13114F6AE9F001A88E0 /* IBAMemoFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBAMemoFormFieldCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,7 @@
 		7512408113A8F6BE007BF2B5 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF54A12B14F6AE7B001A88E0 /* IBAMemoFormField.m */,
 				7512408213A8F6BE007BF2B5 /* IBABooleanFormField.m */,
 				7512408313A8F6BE007BF2B5 /* IBAButtonFormField.m */,
 				7512408413A8F6BE007BF2B5 /* IBADateFormField.m */,
@@ -236,6 +245,7 @@
 		7512409013A8F6BE007BF2B5 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				FF54A12E14F6AE8B001A88E0 /* IBAMemoFormFieldCell.m */,
 				7512409113A8F6BE007BF2B5 /* IBABooleanSwitchCell.m */,
 				7512409213A8F6BE007BF2B5 /* IBADateFormFieldCell.m */,
 				7512409313A8F6BE007BF2B5 /* IBAFormFieldCell.m */,
@@ -286,6 +296,8 @@
 		751240B913A8F6CF007BF2B5 /* IBAForms */ = {
 			isa = PBXGroup;
 			children = (
+				FF54A13014F6AE9E001A88E0 /* IBAMemoFormField.h */,
+				FF54A13114F6AE9F001A88E0 /* IBAMemoFormFieldCell.h */,
 				FECF215C14C1E452001E3890 /* IBABooleanCheckCell.h */,
 				751240BA13A8F6CF007BF2B5 /* IBABooleanFormField.h */,
 				751240BB13A8F6CF007BF2B5 /* IBABooleanSwitchCell.h */,
@@ -372,6 +384,8 @@
 				751240FF13A8F6CF007BF2B5 /* SynthesizeSingleton.h in Headers */,
 				753A7EFC13B36BCF003931DA /* IBATitleFormField.h in Headers */,
 				FECF215D14C1E452001E3890 /* IBABooleanCheckCell.h in Headers */,
+				FF54A13214F6AE9F001A88E0 /* IBAMemoFormField.h in Headers */,
+				FF54A13314F6AE9F001A88E0 /* IBAMemoFormFieldCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +469,8 @@
 				751240B713A8F6BE007BF2B5 /* IBAInputNavigationToolbar.m in Sources */,
 				753A7EFD13B36BCF003931DA /* IBATitleFormField.m in Sources */,
 				FECF214C14C1C24E001E3890 /* IBABooleanCheckCell.m in Sources */,
+				FF54A12C14F6AE7B001A88E0 /* IBAMemoFormField.m in Sources */,
+				FF54A12F14F6AE8B001A88E0 /* IBAMemoFormFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
